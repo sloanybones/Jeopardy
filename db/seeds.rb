@@ -7,6 +7,13 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require "faker"
 
-Thing.create(name: Faker::Hacker.noun)
-Thing.create(name: Faker::Hacker.noun)
-Thing.create(name: Faker::Hacker.noun)
+
+
+Category.create(name: 'Disney' )
+Category.create(name: 'Seahawks' )
+Category.create(name: 'Skiing' )
+Category.create(name: 'Hiking' )
+
+
+
+
