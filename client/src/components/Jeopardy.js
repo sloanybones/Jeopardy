@@ -1,34 +1,33 @@
 import axios from "axios";
-import React, { useState, useEffect } from "react";
-
-
-
+import React, { useState, useContext } from "react";
+import {Card, Container } from 'semantic-ui-react'
+import { CardContext, } from "../providers/CardProvider";
 
 const Jeopardy = () => {
-  const [categories, setCategories] = useState([]);
+  const { category, question, answer, points } = useContext(CardContext);
 
-  useEffect(() => {
-    getCategories();
-    
-  }, []);
 
-  const getCategories = async () => {
-    try {
-      let res = await axios.get("/api/categories");
-      console.log(res)
-    
-    } catch (err) {
-      alert(err);
-    }
-  };
-  
+  console.log(useContext(CardContext))
   
   
   
   
   return(
-    "hey whats up"
-  )
-}
+    
+   
+    "hey"
+    )
+   
+  //   <Card
+  //   href='#card-example-link-card'
+  //   header='Elliot Baker'
+  //   meta='Friend'
+  //   description='Elliot is a sound engineer living in Nashville who enjoys playing guitar and hanging with his cat.'
+  // />
+  
+  
+};
 
 export default Jeopardy;
+
+

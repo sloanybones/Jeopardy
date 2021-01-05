@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Container } from "semantic-ui-react";
 import { Route, Switch } from "react-router-dom";
-import Home from "./demo/Home";
+import Home from "./components/Home";
 import Jeopardy from "./components/Jeopardy";
 import NoMatch from "./components/NoMatch";
 import Navbar from "./components/Navbar";
